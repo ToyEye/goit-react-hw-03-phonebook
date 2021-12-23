@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import PropTepes from 'prop-types';
 import Button from '../Button';
 import { ImputEnter, InputType, InputText } from '../FormComponents';
 
@@ -16,15 +16,8 @@ const FormStyled = styled.form`
 `;
 
 class Form extends Component {
-  static propTypes = {
-    state: PropTypes.objectOf(
-      PropTypes.shape({
-        name: PropTypes.string,
-        number: PropTypes.number,
-      })
-    ),
-    handleChange: PropTypes.func,
-    handleSubmit: PropTypes.func,
+  static propTepes = {
+    onSubmit: PropTepes.func.isRequired,
   };
 
   state = {
